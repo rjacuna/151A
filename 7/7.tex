@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{fontspec}
+\usepackage{xcolor}
+%\usepackage{sagetex}
+
+\usepackage{euler}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+
+
+\usepackage[makeroom]{cancel}
+\usepackage{ulem}
+
+\setlength\parindent{0em}
+\setlength\parskip{0.618em}
+\usepackage[a4paper,lmargin=1in,rmargin=1in,tmargin=1in,bmargin=1in]{geometry}
+
+\setmainfont[Mapping=tex-text]{Helvetica Neue LT Std 45 Light}
+
+\newcommand\N{\mathbb{N}}
+\newcommand\Z{\mathbb{Z}}
+\newcommand\R{\mathbb{R}}
+\newcommand\C{\mathbb{C}}
+\newcommand\A{\mathbb{A}}
+
+\begin{document}
+
+\begin{center}
+  151A---7
+
+  Ricardo J. Acu\~na
+
+  (862079740)
+\end{center}\vspace{1.618em}
+
+\paragraph{14} Let $I = [0,1]$ be the closed unit interval. Suppose $f$
+is a continuous mapping of $I$ into $I$. Prove that $f(x) = x$ for at
+least one $x$ in I.
+
+\uwave{pf.}
+
+Let $g:I\rightarrow I ; x\mapsto (f-1)(x)$. Where $1:I\rightarrow I;
+x\mapsto x$.
+
+$f:I\rightarrow I \implies f(x) \geq 0$
+
+$\implies f(0) \geq 0$
+
+$\implies f(1) \leq 1 \implies f(1) - 1 \leq 1 - 1 = 0$
+
+$\implies g(0) = f(0) - 0 \geq 0$
+
+$\implies g(1) = f(1) - 1 \leq 0$
+
+$g$ is continuous as it is the difference of continuous functions.
+
+$[0,1]$ is closed. So, the function $g$ has a zero on $I$ by the
+intermediate value theorem.
+
+$\implies \exists x\in I: g(x) = 0$
+
+$\implies f(x)-x = 0$
+
+$\implies f(x) = x$
+
+$\qed$
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
